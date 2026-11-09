@@ -108,7 +108,8 @@ pip install -e ".[export]"
 pip install -e ".[hardware]"
 
 # Complete development environment:
-pip install -e ".[full,test]"
+python -m pip install -e ".[full]"
+python -m pip install pytest
 ```
 
 > **Note for Raspberry Pi / Linux users**: Install system PortAudio headers before installing PyAudio:
